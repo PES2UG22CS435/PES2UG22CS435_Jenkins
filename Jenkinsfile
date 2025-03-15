@@ -13,9 +13,9 @@ pipeline {
 
         stage('Build') {
             steps {
-               // build 'PES2UG22CS435-1'  // Ensure job name is correct
-               // sh 'g++ main/hello.cpp -o main/output'  // Adjust path if needed
-	       sh 'exit 1'
+               build 'PES2UG22CS435-1'  // Ensure job name is correct
+               sh 'g++ main/hello.cpp -o main/output'  // Adjust path if needed
+	      // sh 'exit 1' //This is what caused the failure
             }
         }
 
